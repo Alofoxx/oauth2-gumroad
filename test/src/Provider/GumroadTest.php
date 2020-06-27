@@ -148,6 +148,7 @@ class GumroadTest extends \PHPUnit\Framework\TestCase
         $client->shouldReceive('send')
             ->times(1)
             ->andReturn($postResponse);
+        $client->shouldReceive('getReasonPhrase')->once()->andReturnSelf();
         $this->provider->setHttpClient($client);
         $token = $this->provider->getAccessToken('authorization_code', ['code' => 'mock_authorization_code']);
     }
@@ -165,6 +166,7 @@ class GumroadTest extends \PHPUnit\Framework\TestCase
         $client->shouldReceive('send')
             ->times(1)
             ->andReturn($postResponse);
+        $client->shouldReceive('getReasonPhrase')->once()->andReturnSelf();
         $this->provider->setHttpClient($client);
         $token = $this->provider->getAccessToken('authorization_code', ['code' => 'mock_authorization_code']);
     }

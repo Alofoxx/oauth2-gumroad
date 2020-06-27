@@ -23,6 +23,7 @@ class GumroadIdentityProviderException extends IdentityProviderException
     /**
      * Creates client exception from response.
      *
+     * @param ResponseInterface $response Response received from upstream
      * @param mixed $data Parsed response data
      * @return IdentityProviderException
      */
