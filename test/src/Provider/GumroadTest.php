@@ -140,7 +140,7 @@ class GumroadTest extends \PHPUnit\Framework\TestCase
         $this->expectException(\League\OAuth2\Client\Provider\Exception\IdentityProviderException::class);
         $status = rand(400,600);
         $postResponse = m::mock('Psr\Http\Message\ResponseInterface');
-        $postResponse->shouldReceive('getBody')->andReturn('{"client_id": ["This field is required"]}');
+        $postResponse->shouldReceive('getBody')->andReturn('{"message": "Validation Failed","errors": [{"resource": "Issue","field": "title","code": "missing_field"}]}');
         $postResponse->shouldReceive('getHeader')->andReturn(['content-type' => 'appliction/json']);
         $postResponse->shouldReceive('getStatusCode')->andReturn($status);
 
@@ -148,7 +148,6 @@ class GumroadTest extends \PHPUnit\Framework\TestCase
         $client->shouldReceive('send')
             ->times(1)
             ->andReturn($postResponse);
-        $client->shouldReceive('getReasonPhrase')->once()->andReturnSelf();
         $this->provider->setHttpClient($client);
         $token = $this->provider->getAccessToken('authorization_code', ['code' => 'mock_authorization_code']);
     }
@@ -166,7 +165,6 @@ class GumroadTest extends \PHPUnit\Framework\TestCase
         $client->shouldReceive('send')
             ->times(1)
             ->andReturn($postResponse);
-        $client->shouldReceive('getReasonPhrase')->once()->andReturnSelf();
         $this->provider->setHttpClient($client);
         $token = $this->provider->getAccessToken('authorization_code', ['code' => 'mock_authorization_code']);
     }
