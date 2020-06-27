@@ -1,4 +1,4 @@
-# Discord Provider for OAuth 2.0 Client
+# Gumroad Provider for OAuth 2.0 Client
 [![Source Code](http://img.shields.io/badge/source-alofoxx/oauth2--gumroad-blue.svg?style=flat-square)](https://github.com/alofoxx/oauth2-gumroad)
 [![Latest Version](https://img.shields.io/github/release/alofoxx/oauth2-gumroad.svg?style=flat-square)](https://github.com/alofoxx/oauth2-gumroad/releases)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
