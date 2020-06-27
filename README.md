@@ -1,4 +1,11 @@
 # Discord Provider for OAuth 2.0 Client
+[![Source Code](http://img.shields.io/badge/source-alofoxx/oauth2--gumroad-blue.svg?style=flat-square)](https://github.com/alofoxx/oauth2-gumroad)
+[![Latest Version](https://img.shields.io/github/release/alofoxx/oauth2-gumroad.svg?style=flat-square)](https://github.com/alofoxx/oauth2-gumroad/releases)
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
+[![Build Status](https://img.shields.io/travis/alofoxx/oauth2-gumroad/master.svg?style=flat-square)](https://travis-ci.org/alofoxx/oauth2-gumroad)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Alofoxx/oauth2-gumroad/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/Alofoxx/oauth2-gumroad/?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/Alofoxx/oauth2-gumroad/badge.svg?branch=master)](https://coveralls.io/github/Alofoxx/oauth2-gumroad?branch=master)
+[![Total Downloads](https://img.shields.io/packagist/dt/alofoxx/oauth2-gumroad.svg?style=flat-square)](https://packagist.org/packages/alofoxx/oauth2-gumroad)
 
 This package provides Gumroad OAuth 2.0 support for the PHP League's [OAuth 2.0 Client](https://github.com/thephpleague/oauth2-client), v2.0 and up.
 
