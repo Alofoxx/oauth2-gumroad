@@ -120,6 +120,7 @@ At the time of authoring this documentation, the [following scopes are available
 - `edit_products`
 - `view_sales` 
 - `mark_sales_as_shipped`
+- `refund_sales`
 
 ### Refreshing a Token
 
