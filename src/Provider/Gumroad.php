@@ -30,7 +30,7 @@ class Gumroad extends AbstractProvider
      *
      * @var string
      */
-    public $apiDomain = 'https://api.gumroad.com';
+    public $apiDomain = 'https://gumroad.com';
 
     /**
      * Get authorization URL to begin OAuth flow
