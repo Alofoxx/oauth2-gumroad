@@ -120,6 +120,6 @@ class Gumroad extends AbstractProvider
      */
     protected function createResourceOwner(array $response, AccessToken $token)
     {
-        return new GumroadResourceOwner($response);
+        return new GumroadResourceOwner($response['user']);
     }
 }
