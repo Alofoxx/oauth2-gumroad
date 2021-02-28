@@ -106,7 +106,7 @@ class GumroadTest extends \PHPUnit\Framework\TestCase
         $postResponse->shouldReceive('getStatusCode')->andReturn(200);
 
         $userResponse = m::mock('Psr\Http\Message\ResponseInterface');
-        $userResponse->shouldReceive('getBody')->andReturn('{"bio": "'.$bio.'", "facebook_profile": "'.$facebook_profile.'", "name": "'.$name.'", "twitter_handle": "'.$twitter_handle.'", "user_id": "'.$user_id.'", "email": "'.$email.'", "url": "'.$url.'"}');
+        $userResponse->shouldReceive('getBody')->andReturn('{"success": true, "user": {"bio": "'.$bio.'", "facebook_profile": "'.$facebook_profile.'", "name": "'.$name.'", "twitter_handle": "'.$twitter_handle.'", "user_id": "'.$user_id.'", "email": "'.$email.'", "url": "'.$url.'"}}');
         $userResponse->shouldReceive('getHeader')->andReturn(['content-type' => 'json']);
         $userResponse->shouldReceive('getStatusCode')->andReturn(200);
 
